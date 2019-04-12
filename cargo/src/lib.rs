@@ -22,7 +22,7 @@ pub mod android {
     use jni::sys::{jstring};
 
     #[no_mangle]
-    pub unsafe extern fn Java_com_mozilla_greetings_RustGreetings_greeting(env: JNIEnv, _: JClass, java_pattern: JString) -> jstring {
+    pub unsafe extern fn Java_com_sakari_flutter_1rust_1app_RustGreetings_greeting(env: JNIEnv, _: JClass, java_pattern: JString) -> jstring {
         let world = super::rust_greeting(env.get_string(java_pattern).expect("invalid pattern string").as_ptr());
         let world_ptr = super::CString::from_raw(world);
         let output = env.new_string(world_ptr.to_str().unwrap()).expect("Couldn't create java string!");
