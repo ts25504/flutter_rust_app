@@ -2,11 +2,11 @@
 name = "cargo"
 version = "0.1.0"
 authors = ["ts25504 <ts25504@gmail.com>"]
-edition = "2018"
+description = "Example static library project build for Flutter on Android and iOS"
 
 [lib]
 name = "greetings"
-crate-type = ["dylib"]
+crate-type = ["staticlib", "cdylib"]
 
 [target.'cfg(target_os="android")'.dependencies]
 jni = {version = "0.10", default-features = false}
