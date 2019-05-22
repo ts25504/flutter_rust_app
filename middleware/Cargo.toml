@@ -1,11 +1,11 @@
 [package]
-name = "cargo"
+name = "middleware"
 version = "0.1.0"
 authors = ["ts25504 <ts25504@gmail.com>"]
 description = "Example static library project build for Flutter on Android and iOS"
 
 [lib]
-name = "greetings"
+name = "middleware"
 crate-type = ["staticlib", "cdylib"]
 
 [target.'cfg(target_os="android")'.dependencies]

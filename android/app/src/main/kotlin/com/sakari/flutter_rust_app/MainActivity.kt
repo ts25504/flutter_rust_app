@@ -9,7 +9,7 @@ class MainActivity: FlutterActivity() {
   companion object {
     const val CHANNEL = "com.sakari/greetings"
     init {
-      System.loadLibrary("greetings")
+      System.loadLibrary("middleware")
     }
   }
 

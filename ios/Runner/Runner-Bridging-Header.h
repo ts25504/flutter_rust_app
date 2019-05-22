@@ -1,2 +1,2 @@
 #import "GeneratedPluginRegistrant.h"
-#import "greetings.h"
+#import "middleware.h"
